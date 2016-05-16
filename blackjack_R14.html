@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>Blackjack</title>
+
+     <style type="text/css">
+     body {
+          font-family: verdana;
+          background-color: #206c2e;
+          background: linear-gradient(-45deg, #145723, #28AD46);
+     }
+     #container {
+          height:  60%;
+          color: white;
+     }
+
+     .card {
+          border: .25em solid #d8cf9e;
+          background-color: #fff4ba;
+          color: black;
+          width: 9%;
+          height: 20%;
+          border-radius: 10px;
+          /*box-shadow: 7px 7px 5px #CCCC66;*/
+          /*background: linear-gradient(-45dexsg, #CCCC66, #CCCC44);*/
+     }
+
+     .card, p {
+          text-align: center;
+          font-size: 1.5em;
+          margin-top: 1em;
+
+     }
+     #p0 {
+          position: fixed;
+          top: 40%;
+          left: 10%;
+          transform: rotate(50deg);
+     }
+
+     #p1 {
+          position: fixed;
+          top: 57%;
+          left: 21.83%;
+          transform: rotate(33deg);
+     }
+     #p2 {
+          position: fixed;
+          top: 67%;
+          left: 33.67%;
+          transform: rotate(21deg);
+     }
+
+     #p3 {
+          position: fixed;
+          top: 71%;
+          left: 45.5%;
+     }
+
+     #p4 {
+          position: fixed;
+          top: 67%;
+          left: 57.33%;
+          transform: rotate(-21deg);
+     }
+     #p5 {
+          position: fixed;
+          top: 57%;
+          left: 69.17%;
+          transform: rotate(-33deg);
+     }
+
+     #p6 {
+          position: fixed;
+          top: 40%;
+          left: 81%;
+          transform: rotate(-50deg);
+     }
+     #info {
+          position: fixed;
+          top: 85%;
+          left: 7%;
+          height: 10%;
+          width: 20%;
+          border: 1px solid white;
+          border-radius: 1em;
+          background: linear-gradient(-45deg, #145723, #28AD46);
+     }
+
+     #d0 {
+          position: fixed;
+          top: 4%;
+          left: 10%;
+     }
+     #d1{
+          position: fixed;
+          top: 4%;
+          left: 22%;
+     }
+     #d2{
+          position: fixed;
+          top: 4%;
+          left: 34%;
+     }
+     #d3{
+          position: fixed;
+          top: 4%;
+          left: 46%;
+     }
+     #d4{
+          position: fixed;
+          top: 4%;
+          left: 57%;
+     }
+     #d5{
+          position: fixed;
+          top: 4%;
+          left: 69%;
+     }
+     #d6{
+          position: fixed;
+          top: 4%;
+          left: 81%;
+     }
+
+     #player {
+          position: fixed;
+          left: 5%;
+          top: 35%;
+          width: 90%;
+          height: 62%;
+          border: .2em solid #EEEEEE;
+          background-color: #257f36;
+          border-radius: 1em;
+     }
+
+     #dealer {
+          position: fixed;
+          left: 5%;
+          top: 5%;
+          width: 90%;
+          height:25%;
+          border: .2em solid #DDDDDD;
+          background-color: #257f36;
+          border-radius: 1em;
+     }
+     </style>
+     <script src="jquery.js"></script>
+     <!-- <script>
+          $(document).ready(function(){
+               $(".card").mouseover(function(){
+                    $(this).css("transform", "scale(1.1)");
+               })
+          });
+          $(document).ready(function(){
+               $(".card").mouseout(function(){
+                    $(this).css("transform", "scale(0.9091)");
+               })
+          });
+     </script> -->
+</head>
+
+<body>
+     <div id = "container">
+
+          <div id = "dealer">
+               <div id = "d0" class = "card">
+                    <p>♠2</p>
+               </div>
+               <div id = "d1" class = "card">
+                    <p>♥3</p>
+               </div>
+               <div id = "d2" class = "card">
+                    <p>♦4</p>
+               </div>
+               <div id = "d3" class = "card">
+                    <p>♣5</p>
+               </div>
+               <div id = "d4" class = "card">
+                    <p>♣5</p>
+               </div>
+               <div id = "d5" class = "card">
+                    <p>♣5</p>
+               </div>
+               <div id = "d6" class = "card">
+                    <p>♣5</p>
+               </div>
+          </div>
+
+          <div id = "player">
+               <p>Player</p>
+               <div id = "p0" class = "card">
+                    <p>♠2</p>
+               </div>
+               <div id = "p1" class = "card">
+                    <p>♥3</p>
+               </div>
+               <div id = "p2" class = "card">
+                    <p>♦4</p>
+               </div>
+               <div id = "p3" class = "card">
+                    <p>♣5</p>
+               </div>
+               <div id = "p4" class = "card">
+                    <p>♣5</p>
+               </div>
+               <div id = "p5" class = "card">
+                    <p>♣5</p>
+               </div>
+               <div id = "p6" class = "card">
+                    <p>♣5</p>
+               </div>
+
+               <div id = "info">
+                    <p>information</p>
+               </div>
+          </div>
+
+     </div>
+
+
+
+
+</body>
+</html>
